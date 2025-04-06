@@ -1,1 +1,3 @@
-# Hack2Skill
+An AI-powered teacher assistant that automates grading and generates personalized feedback, reducing workload for educators and enhancing learning experiences for students.  
+
+Automated Grading: Instantly evaluates assignments, quizzes, and exams with accuracy, saving educators time.  Personalized Feedback: Provides detailed, AI-generated feedback tailored to each student's strengths and areas for improvement.  Performance Insights: Analyzes student progress over time, identifying patterns and areas needing attention. Seamless Integration: Works with existing LMS platforms like Google Classroom, Moodle, and Canvas for smooth adoption. Enhanced Learning Experience: Reduces educator workload while ensuring students receive timely, constructive feedback to improve learning outcomes.
