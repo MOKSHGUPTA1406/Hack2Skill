@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="home.css">
+
+<body>
+    <div class="page">
+        <div class="drawer">
+            <div class="drawerInner">
+                <img id="home" src="/img/Home.png" alt="Home">
+                <div class="logoframe">
+                    <div class="logos"><img class="img" src="/img/courses.png" alt="courses"></div>
+                    <div class="logos"><img class="img" src="/img/Prototypes.png" alt="Prototypes"></div>
+                    <div class="logos"><img class="img" src="/img/Discussion.png" alt="Discussion"></div>
+                    <div class="logos"><img class="img" src="/img/LiveEvents.png" alt="LiveEvents"></div>
+                </div>
+
+                <div class="dropdown">
+                    <button id="login" class="dropbtn" onclick="myFunction()"
+                        style="background: url('/img/login.png') no-repeat no-repeat center;">
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <img src="/img/drp.png" alt="" id="drp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Dash">
+            <div class="imgs">
+                <a href="/Dashboard.html"> <button class="home"><img src="img/Student.png" alt="" id="dash1"></button></a>
+                <a href="/Dashboard2.html"> <button class="home"><img src="img/Teacher.png" alt="" id="dash2"></button></a>
+            </div>
+            <div class="text">
+                <h2 id="text1">Student</h2>
+                <h2 id="text2">Teacher</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+</html>

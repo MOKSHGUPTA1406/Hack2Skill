@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Dashboard2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="drawer">
+            <div class="drawerInner">
+                <a href="/home.html"> <button class="btn"><img id="home" src="/img/Home.png" alt="Home"></button></a>
+                <div class="logoframe">
+                    <div class="logos"><a href="/courses.html"><button class="crc"><img class="img" src="/img/courses.png" alt="courses"></button></a></div>
+                    <div class="logos"><img class="img" src="/img/Prototypes.png" alt="Prototypes"></div>
+                    <div class="logos"><img class="img" src="/img/Discussion.png" alt="Discussion"></div>
+                    <div class="logos"><img class="img" src="/img/LiveEvents.png" alt="LiveEvents"></div>
+                </div>
+                <div class="dropdown">
+                    <button id="login" class="dropbtn" onclick="myFunction()"
+                        style="background: url('/img/login.png') no-repeat no-repeat center;">
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <img src="/img/drp.png" alt="" id="drp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="/report.html"> <button class="rep">View Report</button></a>
+        <img id="content" src="/img/Assignment.png" alt="">
+    </div>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</html>
